@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  --fs-15: 15px;
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+h1:first-of-type {
+  font-weight: var(--fw-200);
+  color: var(--grayish-blue);
+}
+
+h1:last-of-type {
+  font-weight: var(--fw-600);
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.hero-title p {
+  text-align: center;
+  padding: 0 2rem;
+  font-size: var(--fs-15);
+  color: var(--grayish-blue);
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "start mid1 end"
+    "start mid2 end";
+}
+.card-supervisor {
+  grid-area: start;
+  align-self: center;
+  border-top: 0.5rem solid var(--cyan);
+}
+
+.card-team-builder {
+  grid-area: mid1;
+  border-top: 0.5rem solid var(--red);
+}
+.card-karma {
+  grid-area: mid2;
+  border-top: 0.5rem solid var(--orange);
+}
+.card-calculator {
+  grid-area: end;
+  align-self: center;
+  border-top: 0.5rem solid var(--blue);
+}
+
+.card {
+  background-color: var(--very-light-gray);
+  border-radius: 10px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+}
+
+.card h1 {
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--grayish-blue);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-400);
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card .img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  width: 40px;
+}
+
+@media (max-width: 840px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-supervisor {
+    width: 100%;
+  }
+}

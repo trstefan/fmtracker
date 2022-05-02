@@ -16,6 +16,7 @@ projects.forEach((project, i) => {
   img.src = `/${project}/design/desktop-design.jpg`;
 
   projectLink.href = `/${project}/index.html`;
+  projectLink.target = "_blank";
   projectLink.innerText = `${i + 1}.${formatName(project)}`;
   projectLink.prepend(img);
   // projectCard.appendChild(img);

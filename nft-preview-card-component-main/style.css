@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --fs-p: 18px
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+background-color: var(--main-bg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.box .card {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  height: 530px;
+  background-color: var(--card-bg);
+  font-family: 'Outfit', sans-serif;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.card-img{
+  border-radius: 4%;
+    position: relative; 
+     overflow: hidden;
+}
+
+.card-img img{
+  width: 100%;
+  filter: blur(0.5);
+ 
+}
+
+.eyes{
+  position: absolute;
+    height: 100%;
+    width: 99%;
+    inset: 0px;    
+    background:  url("./images/icon-view.svg") hsl(178, 100%, 50%) ;
+    background-repeat: no-repeat;
+    background-position: center;
+     opacity: 0.0;
+}
+
+.eyes:hover{
+  opacity: 0.7;
+}
+
+
+
+h3 {
+  color: var(--white);
+  
+  margin: 1.5rem 0 ;
+}
+
+h3:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+p{
+  color: var(--soft-blue);
+  font-weight: var(--fw-300);
+  font-size: var(--fs-p);
+  margin-bottom: 1.5rem;
+}
+
+.card-price{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-price > div {
+  display: flex;
+  align-items: center;
+}
+
+.card-price > div > img{
+  margin-right: 0.4rem;
+}
+
+.card-price div:first-child{ 
+  color: var(--cyan);
+}
+
+.card-price div:nth-child(2){ 
+  color: var(--soft-blue);
+}
+
+hr {
+  margin-bottom:1rem;
+  border: 0;
+  height: 2px;
+  background-color: var(--line)
+}
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue)
+}
+
+.card-footer img{
+  border: 2px var(--white) solid;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
+
+span {
+  color: var(--white);
+  margin-left: 0.4rem;
+}
+
+span:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+
+
+

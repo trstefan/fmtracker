@@ -3,6 +3,7 @@ const projects = [
   "four-card-feature-section-master",
   "sunnyside-agency-landing-page-main",
   "testimonials-grid-section-main",
+  "nft-preview-card-component-main",
 ];
 
 const list = document.getElementById("list-projects");

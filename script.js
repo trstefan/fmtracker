@@ -1,6 +1,6 @@
 const projects = [
   "3-col-cards",
-  "four-card-feature-section-master",
+  "four-card-feature-section",
   "sunnyside-agency-landing-page-main",
   "testimonials-grid-section-main",
   "nft-preview-card-component-main",

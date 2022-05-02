@@ -13,9 +13,9 @@ projects.forEach((project, i) => {
   const projectLink = document.createElement("a");
 
   const img = document.createElement("img");
-  img.src = `/${project}/design/desktop-design.jpg`;
+  img.src = `./${project}/design/desktop-design.jpg`;
 
-  projectLink.href = `/${project}/index.html`;
+  projectLink.href = `./${project}/index.html`;
   projectLink.target = "_blank";
   projectLink.innerText = `${i + 1}.${formatName(project)}`;
   projectLink.prepend(img);
